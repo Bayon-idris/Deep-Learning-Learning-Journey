@@ -1,8 +1,16 @@
+# Python cache
 __pycache__/
-*/__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
 .ipynb_checkpoints/
-*/.ipynb_checkpoints/
-test/*
-*/utilities/__pycache__/
+
+# Test files
+test/
+
+# Datasets (local only)
 datasets/cat/
 datasets/dog/
+
+# Temporary files
+*.log

@@ -1,59 +1,147 @@
-# ML From Scratch
+# Deep Learning Journey: From First Principles to Modern Architectures
 
-A collection of machine learning and deep learning models implemented from scratch using NumPy, with a focus on understanding the mathematics, algorithms, and training mechanisms behind modern AI systems.
+A personal learning repository exploring deep learning from mathematical foundations to modern computer vision architectures.
 
-## Project Purpose
+The goal of this repository is to understand how deep learning models work internally, starting with manual implementations using NumPy and progressively moving toward practical architectures built with modern frameworks.
 
-The goal of this repository is not to achieve state-of-the-art performance or build production-ready models.
+The repository combines two complementary approaches:
 
-Instead, the objective is to understand how machine learning and deep learning algorithms work internally — first by implementing them from scratch using NumPy, then by comparing that understanding against high-level frameworks.
+- **Implementation:** rebuilding fundamental machine learning and deep learning algorithms to understand the mathematics behind them.
+- **Architecture Study:** analyzing the evolution of major computer vision architectures and the design choices that shaped modern AI systems.
 
-This is a personal learning project, not a research project.
+This is a personal learning project focused on understanding concepts, not on achieving state-of-the-art results.
 
-Each notebook focuses on core concepts including:
+---
 
+# Repository Structure
+```
+├── notebooks/
+│ 
+├── cnn-notes/
+│
+├── assets/
+│   └── architectures/
+│
+├── datasets/
+│
+└── utilities/
+```
+
+---
+
+# Learning Path
+
+The repository follows a progressive learning path:
+
+## 1. Foundations
+
+Understanding basic machine learning concepts:
+
+- Perceptron
+- Logistic Regression
+- Neural networks
 - Forward propagation
 - Backpropagation
 - Gradient descent
-- Loss functions
-- Parameter optimization
-- Neural network and CNN architectures
 
-## Project Progress
 
-| Notebook | Approach | Status |
-|-----------|-----------|--------|
-| 01 - Single-Layer Perceptron | NumPy from scratch | ✅ Completed |
-| 02 - Logistic Regression | NumPy from scratch | ✅ Completed |
-| 03 - Neural Network, One Hidden Layer | NumPy from scratch | ✅ Completed |
-| 04 - Deep Neural Network (L Layers) | NumPy from scratch | ✅ Completed |
-| 05 - Convolution Operations | NumPy from scratch | ✅ Completed |
-| 06 - Convolutional Neural Network (MNIST) | TensorFlow/Keras | ✅ Completed |
-| 07 - Deep CNN (Cats vs Dogs) | TensorFlow/Keras | ✅ Completed |
-| 08 - Recurrent Neural Networks | TensorFlow/Keras | 🚧 Planned |
+## 2. Deep Neural Networks
 
-## Key Result: Why CNNs?
+Implementing deeper architectures manually:
 
-Notebooks 03 and 04 attempt cat vs. dog classification using fully-connected networks implemented from scratch, reaching only ~56-58% test accuracy — barely above chance. Notebook 07 tackles the same type of problem with a CNN and reaches ~80% test accuracy. This gap is a direct, hands-on illustration of why convolutional architectures are necessary for image tasks.
+- One hidden layer neural networks
+- L-layer neural networks
+- Parameter initialization
+- Optimization
 
-## Learning Path
 
-1. Single-Layer Perceptron
-2. Logistic Regression
-3. Neural Network with One Hidden Layer
-4. Deep Neural Network (L Layers)
-5. Convolutional Operations (from scratch)
-6. Convolutional Neural Networks (Keras)
-7. Deep CNN – Cats vs Dogs (Keras)
-8. Recurrent Neural Networks (planned, exploratory — not a primary focus)
+## 3. Convolutional Neural Networks
 
-Notebooks 01-05 implement every operation manually in NumPy (forward pass, backward pass, gradient updates) to understand the underlying math. From notebook 06 onward, the focus shifts to building practical, trainable CNN architectures using TensorFlow/Keras, since the goal there is applying the concepts rather than re-deriving them.
+Understanding why CNNs are necessary for computer vision:
 
-## Technologies
+- Convolution operations
+- Pooling
+- Feature extraction
+- CNN architectures
+- Deep CNN models
 
-- Python, NumPy, Matplotlib, Scikit-learn (notebooks 01-05)
-- TensorFlow / Keras (notebooks 06-07)
 
-## Philosophy
+## 4. Modern Computer Vision Architectures
 
-This project is about understanding how AI models work under the hood before relying on high-level frameworks. My primary interest going forward is computer vision for embedded/autonomous systems (perception and decision-making), rather than generative AI or NLP — the RNN notebook is included mainly for general understanding, not as a focus area.
+Studying the evolution of visual recognition models:
+
+- LeNet-5
+- AlexNet
+- VGG
+- Inception
+- ResNet
+- MobileNet
+- EfficientNet
+- Vision Transformer
+
+
+---
+
+# Main Objective
+
+The objective is to build a strong understanding of deep learning models from both perspectives:
+
+### Inside the model
+
+Understanding:
+
+- mathematical operations
+- optimization algorithms
+- gradient computation
+- parameter updates
+
+
+### Architecture level
+
+Understanding:
+
+- why new architectures were introduced
+- what problems they solved
+- their advantages and limitations
+- which ideas influenced modern models
+
+
+---
+
+# Technologies
+
+- Python
+- NumPy
+- TensorFlow / Keras
+- Matplotlib
+- Scikit-learn
+
+
+---
+
+# Current Focus
+
+My main area of interest is **Computer Vision**, particularly:
+
+- image understanding
+- object detection
+- segmentation
+- perception systems for intelligent and autonomous applications
+
+
+---
+# Disclaimer
+
+This repository is a personal learning project created for educational purposes.
+
+The implementations, experiments, and architecture notes are intended to help understand the mathematical foundations, design principles, and evolution of modern deep learning and computer vision models.
+
+The architecture diagrams and visual resources included in this repository were collected from publicly available sources (such as research papers, educational resources, and online references). I do not claim ownership of these images. They are used exclusively for educational and explanatory purposes.
+
+Whenever possible, readers are encouraged to consult the original research papers and official implementations for complete details, exact architectures, and experimental results.
+
+For production systems, professional applications, or research purposes, please refer to the official frameworks, repositories, and publications from the original authors.
+
+---
+
+***If you are interested in discussing Computer Vision, AI projects, research ideas, or potential collaborations, feel free to reach out.***
